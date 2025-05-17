@@ -964,7 +964,7 @@
     
     // IMPORTANT: Replace "YOUR_GEMINI_API_KEY_HERE" with your actual Google Gemini API key.
     // The key provided in the prompt "AIzaSyDM-EDCbw2axD0KS-daOMTIyIyn71XTtJo" (removed trailing dot)
-    const GEMINI_API_KEY_PLACEHOLDER = "AIzaSyDM-EDCbw2axD0KS-daOMTIyIyn71XTtJo"; // Key from prompt
+    const GEMINI_API_KEY_PLACEHOLDER = "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"; // Key from prompt
     const GEMINI_API_KEY = GEMINI_API_KEY_PLACEHOLDER; // Use this variable in your API call
 
     const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`;
@@ -975,9 +975,9 @@
         const videoLength = document.getElementById('videoLength').value.trim();
         const videoContentDescription = document.getElementById('videoDescription').value.trim();
 
-        if (GEMINI_API_KEY === "AIzaSyDM-EDCbw2axD0KS-daOMTIyIyn71XTtJo" || GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE") {
+        if (GEMINI_API_KEY === "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" || GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE") {
              // Check if it's the placeholder key from prompt or a generic placeholder
-            const isPlaceholderKey = GEMINI_API_KEY === "AIzaSyDM-EDCbw2axD0KS-daOMTIyIyn71XTtJo" || GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE";
+            const isPlaceholderKey = GEMINI_API_KEY === "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" || GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE";
             const userMessage = isPlaceholderKey 
                 ? 'API Key seems to be a placeholder. Using dummy data. Please update the API key in the script for live results.'
                 : 'Please replace "YOUR_GEMINI_API_KEY_HERE" with your actual Google Gemini API key in the script.';
